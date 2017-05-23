@@ -1,0 +1,39 @@
+*{margin:0px;padding:0px}
+body{width:100%;}
+.clear{clear:both;}
+.banner{background-color:#2FBBE7;height:60px;}
+.banner .logo{font-size:30px;color:#FFFFFF;font-family: "宋体";padding-top:10px;margin-left:3%;}
+.content{margin-top:10px;}
+.left{width:20%;height:800px;background-color:#2FBBE7;float:left;position: absolute;display: inline-block;}
+.xuanze{color:#ffffff;font-size: 15px;font-family: "宋体";width:25%;padding-top: 40px;float:left;}
+.xuanze ul{float:right;list-style:none;margin:0px;text-align:center;margin-top:20px;}
+.xuanze ul li{line-height:50px;}
+.zhanshi{width:70%;height:750px;float:right;background-color: #ffffff;display:inline-block;margin-top:40px; z-index:1;margin-right:2%;overflow-y:scroll; }
+
+@media screen and (max-width: 1600px) {
+    .center{width:60%;height:801px;float:left;margin-left:15%;}
+}
+
+@media screen and (min-width: 1600px) {
+    .center{width:60%;height:801px;float:left;margin-left:25%;}
+}
+.zhanban{width:855px;height:801px;background: url(./ban/ban1.jpg) no-repeat;margin: 0 10% ;background-size:100% 100%;display: inline-block; }
+.zhanban1{width:855px;height:801px;background: url(./ban/ban2.jpg) no-repeat;margin: 0 10% ;background-size:100% 100%;display: inline-block; }
+.bianse{background-color: #0A246A;}
+.kongzhi{float:right;width:5%;z-index:999;height:50px;background-color: #2FBBE7;text-align: center;height:250px;margin-top: 250px;margin-right:3%;}
+.kongzhi ul{list-style-type:none;margin :30px auto;}
+.kongzhi ul li{height:60px;width:100%;color:#ffffff;}
+.kongzhi ul li:hover{color:#f32446;}
+.blue{broder:1px solid black;}
+#shanchu{text-align: center;color:#ffffff;height:50px;margin:0 auto; line-height: 50px;   }
+.td-border{
+
+    border-right:2px solid #000000;
+
+}
+.td-border1{
+
+    border-bottom:2px solid #000000;
+
+}
+td{border:0.5px solid #406191;}

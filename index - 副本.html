@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">  
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="./themes/default/easyui.css"> 
+<script type="text/javascript" src="./jquery-1.4.2.min.js"></script> 
+<script type="text/javascript" src="./jquery.easyui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./themes/icon.css">
+</head>
+<body>
+<div class="left">
+	<table>
+	   <tr> 
+           <td><div class="item">English</div></td>
+	   </tr> 
+       <tr>
+	       <td><div class="item">Science</div></td> 
+	   </tr>
+		<!-- other subjects --> 
+	</table> 
+</div> 
+<div class="right"> 
+    <table> 
+	   <tr>
+	      <td class="blank"></td>
+		  <td class="title">Monday</td> 
+		  <td class="title">Tuesday</td>
+	      <td class="title">Wednesday</td> 
+		  <td class="title">Thursday</td> 
+		  <td class="title">Friday</td>
+	   </tr> 
+	   <tr>
+	       <td class="time">08:00</td> 
+		   <td class="drop"></td>
+	       <td class="drop"></td> 
+		   <td class="drop"></td> 
+		   <td class="drop"></td> 
+		   <td class="drop"></td> 
+	   </tr> <!-- other cells --> 
+	</table> 
+</div> 
+<script>
+$('.left .item').draggable({ revert:true, proxy:'clone' }); 
+$('.right td.drop').droppable({ 
+   onDragEnter:function(){ $(this).addClass('over'); },
+   onDragLeave:function(){ $(this).removeClass('over'); },
+   onDrop:function(e,source){ $(this).removeClass('over'); 
+   if ($(source).hasClass('assigned')){ 
+   $(this).append(source); 
+   } else {
+   var c = $(source).clone().addClass('assigned');
+   $(this).empty().append(c); c.draggable({ revert:true }); 
+   } 
+   }
+ });
+</script>
+
+</body>
+</html>

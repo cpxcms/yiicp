@@ -1,0 +1,11 @@
+.zhan{margin:0 auto;text-align:center;}
+.zhan ul{margin:0 auto;}
+.zhan ul li{list-style-type:none; width:59px;height:59px;margin:0 auto; }
+.zhan ul li img{ width:100%;height:100%; }
+.proxy{width:59px;height:59px;}
+.over{width:59px;height:59px;}
+.over li {width:59px;height:59px;list-style-type:none;  margin:0px;  }
+.zhanban li{list-style-type:none; width:59px;height:59px;margin:0 auto; }
+.assigned{text-align: center;}
+.assigned img{width:58px;height:58px;margin:0 auto;}
+.hong{background-color: #f32446;}
